@@ -38,6 +38,7 @@ public class ImageProcessingApp {
 
             sDuration = String.valueOf(System.currentTimeMillis() - startTime);
             System.out.println("\nMultithread (threads: "+i+") Executes in: " + sDuration + " milliseconds.");
+            ImageIO.write(modifiedImage, "jpg",new File(MULTI_TARGET_FILE));
         }
     }
 
